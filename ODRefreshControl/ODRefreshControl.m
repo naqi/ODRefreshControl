@@ -523,7 +523,7 @@ static inline CGFloat lerp(CGFloat a, CGFloat b, CGFloat p)
         // Check if we can trigger a new refresh and if we can draw the control
         BOOL dontDraw = NO;
         if (!_canRefresh) {
-            if (self.scrollView.isDragging && _lastOffset == 0 && offset <= 0) {
+            if (self.scrollView.isDragging && _lastOffset < 0 && offset <= 0) {
                 _canRefresh = YES;
                 _didSetInset = NO;
             } else {
