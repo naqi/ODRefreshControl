@@ -10,7 +10,7 @@
 
 #import "ODRefreshControl.h"
 
-const CGFloat kMinTopPadding    = 9.0f;
+const CGFloat kMinTopPadding    = 25.0f;
 const CGFloat kMaxTopPadding    = 5.0f;
 const CGFloat kMinTopRadius     = 12.5f;
 const CGFloat kMaxTopRadius     = 16.0f;
